@@ -1,0 +1,136 @@
+{
+  "processors": [
+    {
+      "id": "snapdragon-8-elite",
+      "nome": "Snapdragon 8 Elite",
+      "fabricante": "Qualcomm",
+      "arquitetura": "ARMv8 (Oryon)",
+      "processo": "3 nm",
+      "cpu": "2x Oryon L @ 4.32 GHz + 6x Oryon M @ 3.53 GHz",
+      "gpu": "Adreno 830",
+      "ano": 2024,
+      "categoria": "flagship"
+    },
+    {
+      "id": "snapdragon-8-gen-3",
+      "nome": "Snapdragon 8 Gen 3",
+      "fabricante": "Qualcomm",
+      "arquitetura": "ARMv9.2",
+      "processo": "4 nm",
+      "cpu": "1x Cortex-X4 @ 3.3 GHz + 3x Cortex-A720 @ 3.2 GHz + 2x Cortex-A720 @ 3.0 GHz + 2x Cortex-A520 @ 2.3 GHz",
+      "gpu": "Adreno 750",
+      "ano": 2023,
+      "categoria": "flagship"
+    },
+    {
+      "id": "apple-a19",
+      "nome": "Apple A19",
+      "fabricante": "Apple",
+      "arquitetura": "ARMv9 (custom)",
+      "processo": "3 nm",
+      "cpu": "2x núcleos de performance + 4x núcleos de eficiência",
+      "gpu": "Apple GPU (5 núcleos)",
+      "ano": 2025,
+      "categoria": "flagship"
+    },
+    {
+      "id": "apple-a19-pro",
+      "nome": "Apple A19 Pro",
+      "fabricante": "Apple",
+      "arquitetura": "ARMv9 (custom)",
+      "processo": "3 nm",
+      "cpu": "2x núcleos de performance + 4x núcleos de eficiência",
+      "gpu": "Apple GPU (6 núcleos)",
+      "ano": 2025,
+      "categoria": "flagship"
+    },
+    {
+      "id": "dimensity-9400",
+      "nome": "Dimensity 9400",
+      "fabricante": "MediaTek",
+      "arquitetura": "ARMv9.2",
+      "processo": "3 nm",
+      "cpu": "1x Cortex-X925 @ 3.62 GHz + 3x Cortex-X4 + 4x Cortex-A720",
+      "gpu": "Immortalis-G925",
+      "ano": 2024,
+      "categoria": "flagship"
+    },
+    {
+      "id": "tensor-g5",
+      "nome": "Tensor G5",
+      "fabricante": "Google",
+      "arquitetura": "ARMv9.2",
+      "processo": "3 nm",
+      "cpu": "1x Cortex-X4 @ 3.78 GHz + 5x Cortex-A725 @ 3.05 GHz + 2x Cortex-A520 @ 2.25 GHz",
+      "gpu": "IMG DXT-48-1536",
+      "ano": 2025,
+      "categoria": "flagship"
+    },
+    {
+      "id": "exynos-2400",
+      "nome": "Exynos 2400",
+      "fabricante": "Samsung",
+      "arquitetura": "ARMv9.2",
+      "processo": "4 nm",
+      "cpu": "1x Cortex-X4 @ 3.2 GHz + 2x Cortex-A720 @ 2.9 GHz + 3x Cortex-A720 @ 2.6 GHz + 4x Cortex-A520 @ 1.95 GHz",
+      "gpu": "Xclipse 940 (RDNA 3)",
+      "ano": 2024,
+      "categoria": "flagship"
+    },
+    {
+      "id": "dimensity-7300-ultra",
+      "nome": "Dimensity 7300 Ultra",
+      "fabricante": "MediaTek",
+      "arquitetura": "ARMv8.2",
+      "processo": "4 nm",
+      "cpu": "4x Cortex-A78 @ 2.5 GHz + 4x Cortex-A55 @ 2.0 GHz",
+      "gpu": "Mali-G615 MC2",
+      "ano": 2024,
+      "categoria": "intermediario"
+    },
+    {
+      "id": "snapdragon-6-gen-1",
+      "nome": "Snapdragon 6 Gen 1",
+      "fabricante": "Qualcomm",
+      "arquitetura": "ARMv8.2",
+      "processo": "4 nm",
+      "cpu": "4x Cortex-A78 @ 2.2 GHz + 4x Cortex-A55 @ 1.8 GHz",
+      "gpu": "Adreno 710",
+      "ano": 2022,
+      "categoria": "entrada"
+    },
+    {
+      "id": "snapdragon-8-elite-gen-5",
+      "nome": "Snapdragon 8 Elite Gen 5",
+      "fabricante": "Qualcomm",
+      "arquitetura": "ARMv9.2",
+      "processo": "3 nm",
+      "cpu": "2x Oryon Gen 3 Prime @ 4.61 GHz + 6x Oryon Gen 3 Performance @ 3.62 GHz",
+      "gpu": "Adreno 840",
+      "ano": 2025,
+      "categoria": "flagship"
+    },
+    {
+      "id": "dimensity-9500",
+      "nome": "Dimensity 9500",
+      "fabricante": "MediaTek",
+      "arquitetura": "ARMv9.3",
+      "processo": "3 nm",
+      "cpu": "1x C1-Ultra @ 4.21 GHz + 3x C1-Premium @ 3.5 GHz + 4x C1-Pro @ 2.7 GHz",
+      "gpu": "Arm G1-Ultra",
+      "ano": 2025,
+      "categoria": "flagship"
+    },
+    {
+      "id": "snapdragon-8-gen-5",
+      "nome": "Snapdragon 8 Gen 5",
+      "fabricante": "Qualcomm",
+      "arquitetura": "ARMv9.2",
+      "processo": "3 nm",
+      "cpu": "2x Oryon Prime @ 3.8 GHz + 6x Oryon Performance @ 3.32 GHz",
+      "gpu": "Adreno 829",
+      "ano": 2025,
+      "categoria": null
+    }
+  ]
+}

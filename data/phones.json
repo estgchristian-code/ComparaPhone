@@ -1,0 +1,409 @@
+{
+  "phones": [
+    {
+      "id": "samsung-galaxy-s25",
+      "brandId": "samsung",
+      "model": "Galaxy S25",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.2,
+        "tipo": "Dynamic AMOLED 2X",
+        "resolucao": "2340 x 1080",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 4000,
+        "carregamento": "25 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.8" },
+        { "tipo": "ultrawide", "megapixels": 12, "abertura": "f/2.2" },
+        { "tipo": "telefoto", "megapixels": 10, "abertura": "f/2.4" }
+      ],
+      "peso": 162,
+      "coresDisponiveis": ["Preto", "Azul Claro", "Prata", "Verde Mentol"],
+      "imagem": "/images/phones/samsung-galaxy-s25.webp"
+    },
+    {
+      "id": "samsung-galaxy-s25-ultra",
+      "brandId": "samsung",
+      "model": "Galaxy S25 Ultra",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite",
+      "ram": 12,
+      "armazenamento": 512,
+      "tela": {
+        "polegadas": 6.9,
+        "tipo": "Dynamic AMOLED 2X LTPO",
+        "resolucao": "3120 x 1440",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 5000,
+        "carregamento": "45 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 200, "abertura": "f/1.7" },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": "f/1.9" },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": "f/3.4" },
+        { "tipo": "telefoto", "megapixels": 10, "abertura": "f/2.4" }
+      ],
+      "peso": 218,
+      "coresDisponiveis": ["Preto Titânio", "Cinza Titânio", "Prata Titânio", "Dourado Titânio"],
+      "imagem": "/images/phones/samsung-galaxy-s25-ultra.webp"
+    },
+    {
+      "id": "samsung-galaxy-s25-fe",
+      "brandId": "samsung",
+      "model": "Galaxy S25 FE",
+      "ano": 2025,
+      "processadorId": "exynos-2400",
+      "ram": 8,
+      "armazenamento": 128,
+      "tela": {
+        "polegadas": 6.7,
+        "tipo": "Dynamic AMOLED 2X",
+        "resolucao": "2340 x 1080",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 4900,
+        "carregamento": "45 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.8" },
+        { "tipo": "ultrawide", "megapixels": 12, "abertura": "f/2.2" },
+        { "tipo": "telefoto", "megapixels": 8, "abertura": "f/2.4" }
+      ],
+      "peso": 190,
+      "coresDisponiveis": ["Azul", "Cinza", "Menta"],
+      "imagem": "/images/phones/samsung-galaxy-s25-fe.webp"
+    },
+    {
+      "id": "apple-iphone-17",
+      "brandId": "apple",
+      "model": "iPhone 17",
+      "ano": 2025,
+      "processadorId": "apple-a19",
+      "ram": 8,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.3,
+        "tipo": "LTPO OLED",
+        "resolucao": "2622 x 1206",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 3692,
+        "carregamento": null
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 48, "abertura": "f/1.6" },
+        { "tipo": "ultrawide", "megapixels": 48, "abertura": null }
+      ],
+      "peso": 177,
+      "coresDisponiveis": ["Preto", "Branco", "Rosa", "Azul", "Verde"],
+      "imagem": "/images/phones/apple-iphone-17.webp"
+    },
+    {
+      "id": "apple-iphone-17-pro",
+      "brandId": "apple",
+      "model": "iPhone 17 Pro",
+      "ano": 2025,
+      "processadorId": "apple-a19-pro",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.3,
+        "tipo": "LTPO OLED ProMotion",
+        "resolucao": "2622 x 1206",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 3998,
+        "carregamento": null
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 48, "abertura": "f/1.8" },
+        { "tipo": "ultrawide", "megapixels": 48, "abertura": "f/2.2" },
+        { "tipo": "telefoto", "megapixels": 48, "abertura": null }
+      ],
+      "peso": 206,
+      "coresDisponiveis": ["Preto Titânio", "Branco Titânio", "Azul Titânio", "Cinza Titânio"],
+      "imagem": "/images/phones/apple-iphone-17-pro.webp"
+    },
+    {
+      "id": "google-pixel-10",
+      "brandId": "google",
+      "model": "Pixel 10",
+      "ano": 2025,
+      "processadorId": "tensor-g5",
+      "ram": 12,
+      "armazenamento": 128,
+      "tela": {
+        "polegadas": 6.3,
+        "tipo": "LTPO OLED",
+        "resolucao": "2424 x 1080",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 4970,
+        "carregamento": "30 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 48, "abertura": "f/1.7" },
+        { "tipo": "ultrawide", "megapixels": 13, "abertura": "f/2.2" },
+        { "tipo": "telefoto", "megapixels": 10.8, "abertura": "f/3.1" }
+      ],
+      "peso": 204,
+      "coresDisponiveis": ["Preto", "Branco", "Verde", "Azul"],
+      "imagem": "/images/phones/google-pixel-10.webp"
+    },
+    {
+      "id": "motorola-signature",
+      "brandId": "motorola",
+      "model": "Signature",
+      "ano": 2026,
+      "processadorId": "snapdragon-8-gen-5",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.8,
+        "tipo": "LTPO AMOLED",
+        "resolucao": "1264 x 2780",
+        "taxaAtualizacao": 165
+      },
+      "bateria": {
+        "capacidade": 5200,
+        "carregamento": "90 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.6" },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": "f/2.0" },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": null }
+      ],
+      "peso": 186,
+      "coresDisponiveis": ["Pantone Carbon", "Martini Olive"],
+      "imagem": "/images/phones/motorola-signature.webp"
+    },
+    {
+      "id": "xiaomi-17",
+      "brandId": "xiaomi",
+      "model": "Xiaomi 17",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite-gen-5",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.3,
+        "tipo": "LTPO AMOLED",
+        "resolucao": "2656 x 1220",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 6330,
+        "carregamento": "100 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.7" },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": "f/2.4" },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": "f/2.0" }
+      ],
+      "peso": 191,
+      "coresDisponiveis": ["Preto", "Verde", "Rosa", "Azul", "Branco"],
+      "imagem": "/images/phones/xiaomi-17.webp"
+    },
+    {
+      "id": "xiaomi-redmi-note-14-pro",
+      "brandId": "xiaomi",
+      "model": "Redmi Note 14 Pro",
+      "ano": 2025,
+      "processadorId": "dimensity-7300-ultra",
+      "ram": 8,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.67,
+        "tipo": "AMOLED",
+        "resolucao": "2712 x 1220",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 5110,
+        "carregamento": "45 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 200, "abertura": "f/1.6" },
+        { "tipo": "ultrawide", "megapixels": 8, "abertura": "f/2.2" },
+        { "tipo": "macro", "megapixels": 2, "abertura": "f/2.4" }
+      ],
+      "peso": 190,
+      "coresDisponiveis": ["Preto", "Branco", "Lavanda"],
+      "imagem": "/images/phones/xiaomi-redmi-note-14-pro.webp"
+    },
+    {
+      "id": "oneplus-15",
+      "brandId": "oneplus",
+      "model": "OnePlus 15",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite-gen-5",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.78,
+        "tipo": null,
+        "resolucao": "2772 x 1272",
+        "taxaAtualizacao": 165
+      },
+      "bateria": {
+        "capacidade": 7300,
+        "carregamento": "120 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.8" },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": "f/2.0" },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": "f/2.8" }
+      ],
+      "peso": 211,
+      "coresDisponiveis": ["Preto", "Azul", "Branco"],
+      "imagem": "/images/phones/oneplus-15.webp"
+    },
+    {
+      "id": "oppo-find-x9",
+      "brandId": "oppo",
+      "model": "Find X9",
+      "ano": 2025,
+      "processadorId": "dimensity-9500",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.59,
+        "tipo": null,
+        "resolucao": "2760 x 1256",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 7025,
+        "carregamento": "80 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": null },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": null },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": null }
+      ],
+      "peso": 203,
+      "coresDisponiveis": ["Preto", "Branco", "Azul"],
+      "imagem": "/images/phones/oppo-find-x9.webp"
+    },
+    {
+      "id": "vivo-x200-pro",
+      "brandId": "vivo",
+      "model": "X200 Pro",
+      "ano": 2024,
+      "processadorId": "dimensity-9400",
+      "ram": 16,
+      "armazenamento": 512,
+      "tela": {
+        "polegadas": 6.78,
+        "tipo": "LTPO AMOLED",
+        "resolucao": "2800 x 1260",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 6000,
+        "carregamento": "90 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.6" },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": "f/2.0" },
+        { "tipo": "telefoto", "megapixels": 200, "abertura": "f/2.7" }
+      ],
+      "peso": 223,
+      "coresDisponiveis": ["Titânio", "Preto", "Azul"],
+      "imagem": "/images/phones/vivo-x200-pro.webp"
+    },
+    {
+      "id": "honor-magic-8-pro",
+      "brandId": "honor",
+      "model": "Magic 8 Pro",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite-gen-5",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.71,
+        "tipo": null,
+        "resolucao": "2808 x 1256",
+        "taxaAtualizacao": 120
+      },
+      "bateria": {
+        "capacidade": 7100,
+        "carregamento": "100 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": null },
+        { "tipo": "ultrawide", "megapixels": 50, "abertura": null },
+        { "tipo": "telefoto", "megapixels": 200, "abertura": null }
+      ],
+      "peso": 219,
+      "coresDisponiveis": ["Preto", "Azul", "Branco"],
+      "imagem": "/images/phones/honor-magic-8-pro.webp"
+    },
+    {
+      "id": "asus-rog-phone-9-pro",
+      "brandId": "asus",
+      "model": "ROG Phone 9 Pro",
+      "ano": 2024,
+      "processadorId": "snapdragon-8-elite",
+      "ram": 16,
+      "armazenamento": 512,
+      "tela": {
+        "polegadas": 6.78,
+        "tipo": "LTPO AMOLED",
+        "resolucao": "2400 x 1080",
+        "taxaAtualizacao": 185
+      },
+      "bateria": {
+        "capacidade": 5800,
+        "carregamento": "65 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": "f/1.9" },
+        { "tipo": "ultrawide", "megapixels": 13, "abertura": "f/2.2" },
+        { "tipo": "telefoto", "megapixels": 32, "abertura": "f/2.4" }
+      ],
+      "peso": 227,
+      "coresDisponiveis": ["Preto Fantasma"],
+      "imagem": "/images/phones/asus-rog-phone-9-pro.webp"
+    },
+    {
+      "id": "realme-gt-8",
+      "brandId": "realme",
+      "model": "GT 8",
+      "ano": 2025,
+      "processadorId": "snapdragon-8-elite",
+      "ram": 12,
+      "armazenamento": 256,
+      "tela": {
+        "polegadas": 6.79,
+        "tipo": null,
+        "resolucao": "3136 x 1440",
+        "taxaAtualizacao": 144
+      },
+      "bateria": {
+        "capacidade": 7000,
+        "carregamento": "100 W"
+      },
+      "cameras": [
+        { "tipo": "principal", "megapixels": 50, "abertura": null },
+        { "tipo": "ultrawide", "megapixels": 8, "abertura": null },
+        { "tipo": "telefoto", "megapixels": 50, "abertura": null }
+      ],
+      "peso": 209,
+      "coresDisponiveis": ["Preto", "Branco", "Dourado"],
+      "imagem": "/images/phones/realme-gt-8.webp"
+    }
+  ]
+}

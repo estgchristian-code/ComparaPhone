@@ -1,0 +1,14 @@
+{
+  "categories": [
+    { "id": "cpu", "nome": "CPU", "icone": "cpu", "ordem": 1 },
+    { "id": "gpu", "nome": "GPU", "icone": "gpu", "ordem": 2 },
+    { "id": "antutu", "nome": "AnTuTu", "icone": "gauge", "ordem": 3 },
+    { "id": "tela", "nome": "Tela", "icone": "monitor", "ordem": 4 },
+    { "id": "ram", "nome": "RAM", "icone": "memory-stick", "ordem": 5 },
+    { "id": "armazenamento", "nome": "Armazenamento", "icone": "hard-drive", "ordem": 6 },
+    { "id": "cameras", "nome": "Câmeras", "icone": "camera", "ordem": 7 },
+    { "id": "bateria", "nome": "Bateria", "icone": "battery-charging", "ordem": 8 },
+    { "id": "conectividade", "nome": "Conectividade", "icone": "wifi", "ordem": 9 },
+    { "id": "construcao", "nome": "Construção", "icone": "smartphone", "ordem": 10 }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "brands": [
+    {
+      "id": "samsung",
+      "nome": "Samsung",
+      "pais": "Coreia do Sul",
+      "corPrincipal": "#1428A0",
+      "logo": "/images/brands/samsung.svg"
+    },
+    {
+      "id": "apple",
+      "nome": "Apple",
+      "pais": "Estados Unidos",
+      "corPrincipal": "#A2AAAD",
+      "logo": "/images/brands/apple.svg"
+    },
+    {
+      "id": "xiaomi",
+      "nome": "Xiaomi",
+      "pais": "China",
+      "corPrincipal": "#FF6900",
+      "logo": "/images/brands/xiaomi.svg"
+    },
+    {
+      "id": "motorola",
+      "nome": "Motorola",
+      "pais": "Estados Unidos",
+      "corPrincipal": "#00A5E0",
+      "logo": "/images/brands/motorola.svg"
+    },
+    {
+      "id": "google",
+      "nome": "Google",
+      "pais": "Estados Unidos",
+      "corPrincipal": "#4285F4",
+      "logo": "/images/brands/google.svg"
+    },
+    {
+      "id": "oneplus",
+      "nome": "OnePlus",
+      "pais": "China",
+      "corPrincipal": "#EB0029",
+      "logo": "/images/brands/oneplus.svg"
+    },
+    {
+      "id": "oppo",
+      "nome": "OPPO",
+      "pais": "China",
+      "corPrincipal": "#00B14F",
+      "logo": "/images/brands/oppo.svg"
+    },
+    {
+      "id": "vivo",
+      "nome": "vivo",
+      "pais": "China",
+      "corPrincipal": "#415FFF",
+      "logo": "/images/brands/vivo.svg"
+    },
+    {
+      "id": "honor",
+      "nome": "HONOR",
+      "pais": "China",
+      "corPrincipal": "#4B5AF9",
+      "logo": "/images/brands/honor.svg"
+    },
+    {
+      "id": "asus",
+      "nome": "ASUS",
+      "pais": "Taiwan",
+      "corPrincipal": "#00539B",
+      "logo": "/images/brands/asus.svg"
+    },
+    {
+      "id": "realme",
+      "nome": "Realme",
+      "pais": "China",
+      "corPrincipal": "#FFD400",
+      "logo": "/images/brands/realme.svg"
+    }
+  ]
+}

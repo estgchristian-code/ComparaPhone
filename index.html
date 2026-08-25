@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Compare smartphones lado a lado, com foco em hardware, desempenho e especificações técnicas."
+    />
+    <title>ComparaPhone — Compare smartphones e escolha melhor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header
+        class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-surface-950/80 backdrop-blur-xl"
+      >
+        <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+          <a href="#inicio" class="flex items-center gap-3">
+            <span
+              class="grid size-9 place-items-center rounded-xl bg-primary-500 text-black shadow-lg shadow-primary-950/40"
+            >
+              <svg
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="7" y="2" width="10" height="20" rx="2.5" />
+                <path d="M12 17.5h.01" />
+              </svg>
+            </span>
+            <span class="text-lg font-bold tracking-tight text-white"
+              >Compara<span class="text-primary-400">Phone</span></span
+            >
+          </a>
+
+          <nav class="hidden items-center gap-1 md:flex">
+            <a
+              href="#destaques"
+              class="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Celulares</a
+            >
+            <a
+              href="#inicio"
+              class="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Comparar</a
+            >
+            <a
+              href="#"
+              class="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Rankings</a
+            >
+          </nav>
+
+          <button
+            type="button"
+            data-menu-button
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            class="grid size-10 place-items-center rounded-xl border border-white/10 text-zinc-300 transition duration-300 hover:bg-white/5 hover:text-white md:hidden"
+          >
+            <svg
+              data-icon-menu
+              class="size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg
+              data-icon-close
+              class="hidden size-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="menu-mobile"
+          data-menu
+          class="hidden border-t border-white/5 bg-surface-950/95 px-6 py-4 backdrop-blur-xl md:hidden"
+        >
+          <nav class="flex flex-col gap-1">
+            <a
+              href="#destaques"
+              class="rounded-xl px-4 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Celulares</a
+            >
+            <a
+              href="#inicio"
+              class="rounded-xl px-4 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Comparar</a
+            >
+            <a
+              href="#"
+              class="rounded-xl px-4 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:bg-white/5 hover:text-white"
+              >Rankings</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="compare-page" class="hidden">
+          <div id="compare-root" class="mx-auto max-w-7xl px-6 py-16 sm:py-20"></div>
+        </section>
+
+        <section id="inicio" class="relative overflow-hidden">
+          <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+            <div
+              class="absolute left-1/2 top-[-8rem] h-[28rem] w-[44rem] -translate-x-1/2 rounded-full bg-primary-500/10 blur-[110px]"
+            ></div>
+            <div
+              class="absolute right-[-6rem] top-40 h-72 w-72 rounded-full bg-surface-800/60 blur-[90px]"
+            ></div>
+          </div>
+
+          <div class="relative mx-auto max-w-5xl px-6 pb-24 pt-36 text-center sm:pt-44">
+            <span
+              class="inline-flex items-center gap-2 rounded-full border border-primary-500/20 bg-primary-500/10 px-4 py-1.5 text-xs font-medium text-primary-400"
+            >
+              <span class="relative flex size-1.5">
+                <span
+                  class="absolute inline-flex size-full animate-ping rounded-full bg-primary-400 opacity-75"
+                ></span>
+                <span class="relative inline-flex size-1.5 rounded-full bg-primary-400"></span>
+              </span>
+              Comparação técnica de smartphones
+            </span>
+
+            <h1
+              class="mx-auto mt-8 max-w-3xl text-balance text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              Escolha o próximo celular
+              <span
+                class="bg-linear-to-r from-primary-300 via-primary-400 to-primary-500 bg-clip-text text-transparent"
+                >com dados</span
+              >, não com achismo.
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-2xl text-pretty text-base text-zinc-400 sm:text-lg">
+              Compare lado a lado processador, GPU, tela, câmeras e bateria dos principais
+              smartphones — e descubra qual realmente vale a pena. Sem marketing, sem
+              enrolação.
+            </p>
+
+            <div class="mx-auto mt-12 grid max-w-2xl gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
+              <div class="relative w-full" data-search>
+                <button
+                  type="button"
+                  data-search-trigger
+                  aria-expanded="false"
+                  class="group flex w-full items-center gap-3 rounded-2xl border border-white/10 bg-surface-900/90 px-5 py-4 text-left transition duration-300 hover:border-primary-400/50 hover:bg-surface-800/80"
+                >
+                  <svg
+                    class="size-5 shrink-0 text-zinc-500 transition duration-300 group-hover:text-primary-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M16.5 16.5 21 21" />
+                  </svg>
+                  <span
+                    data-search-placeholder
+                    class="flex-1 truncate text-sm text-zinc-400 transition duration-300 group-hover:text-zinc-300"
+                    >Pesquisar celular</span
+                  >
+                  <svg
+                    class="size-4 shrink-0 text-zinc-600 transition duration-300 group-hover:text-primary-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+
+                <div
+                  data-search-panel
+                  class="absolute left-0 right-0 top-full z-50 mt-2 hidden overflow-hidden rounded-2xl border border-white/10 bg-surface-900 shadow-2xl shadow-black/60"
+                >
+                  <div class="border-b border-white/5 p-3">
+                    <input
+                      type="text"
+                      data-search-input
+                      autocomplete="off"
+                      spellcheck="false"
+                      placeholder="Buscar celular..."
+                      class="w-full rounded-xl border border-white/10 bg-surface-950/60 px-4 py-2.5 text-sm text-white outline-none transition duration-300 placeholder:text-zinc-500 focus:border-primary-400/60"
+                    />
+                  </div>
+                  <p data-search-status class="px-4 py-3 text-sm text-zinc-500"></p>
+                  <ul data-search-results class="max-h-72 overflow-y-auto"></ul>
+                </div>
+              </div>
+
+              <span
+                class="grid size-11 shrink-0 place-items-center self-center justify-self-center rounded-full bg-primary-500 text-sm font-bold tracking-wide text-black shadow-lg shadow-primary-950/40 ring-4 ring-primary-500/15"
+              >
+                VS
+              </span>
+
+              <div class="relative w-full" data-search>
+                <button
+                  type="button"
+                  data-search-trigger
+                  aria-expanded="false"
+                  class="group flex w-full items-center gap-3 rounded-2xl border border-white/10 bg-surface-900/90 px-5 py-4 text-left transition duration-300 hover:border-primary-400/50 hover:bg-surface-800/80"
+                >
+                  <svg
+                    class="size-5 shrink-0 text-zinc-500 transition duration-300 group-hover:text-primary-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  >
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M16.5 16.5 21 21" />
+                  </svg>
+                  <span
+                    data-search-placeholder
+                    class="flex-1 truncate text-sm text-zinc-400 transition duration-300 group-hover:text-zinc-300"
+                    >Pesquisar celular</span
+                  >
+                  <svg
+                    class="size-4 shrink-0 text-zinc-600 transition duration-300 group-hover:text-primary-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+
+                <div
+                  data-search-panel
+                  class="absolute left-0 right-0 top-full z-50 mt-2 hidden overflow-hidden rounded-2xl border border-white/10 bg-surface-900 shadow-2xl shadow-black/60"
+                >
+                  <div class="border-b border-white/5 p-3">
+                    <input
+                      type="text"
+                      data-search-input
+                      autocomplete="off"
+                      spellcheck="false"
+                      placeholder="Buscar celular..."
+                      class="w-full rounded-xl border border-white/10 bg-surface-950/60 px-4 py-2.5 text-sm text-white outline-none transition duration-300 placeholder:text-zinc-500 focus:border-primary-400/60"
+                    />
+                  </div>
+                  <p data-search-status class="px-4 py-3 text-sm text-zinc-500"></p>
+                  <ul data-search-results class="max-h-72 overflow-y-auto"></ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-4 text-xs text-zinc-600">
+              Selecione dois aparelhos para comparar lado a lado.
+            </p>
+
+            <div
+              class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
+            >
+              <button
+                type="button"
+                data-compare-button
+                disabled
+                aria-disabled="true"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-3.5 text-sm font-semibold text-black shadow-lg shadow-primary-950/40 transition duration-300 hover:bg-primary-400 hover:shadow-primary-900/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-primary-500 disabled:hover:shadow-primary-950/40 disabled:active:scale-100 sm:w-auto"
+              >
+                Comparar celulares
+                <svg
+                  class="size-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </button>
+              <a
+                href="#hardware"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 px-8 py-3.5 text-sm font-semibold text-zinc-300 transition duration-300 hover:border-primary-500/40 hover:text-primary-400 sm:w-auto"
+              >
+                Explorar recursos
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="destaques" class="py-20 sm:py-28">
+          <div class="mx-auto max-w-7xl px-6">
+            <div class="max-w-2xl">
+              <p class="text-sm font-semibold uppercase tracking-widest text-primary-400">
+                Vitrine
+              </p>
+              <h2
+                class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+              >
+                Smartphones em destaque
+              </h2>
+              <p class="mt-4 text-lg leading-relaxed text-zinc-400">
+                Um primeiro olhar nos modelos mais comentados do momento. Dados de
+                exemplo — a comparação real chega em breve.
+              </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <article
+                class="group rounded-3xl border border-white/5 bg-surface-900 transition duration-300 hover:-translate-y-1.5 hover:border-primary-400/30 hover:shadow-2xl hover:shadow-black/40"
+              >
+                <div class="relative flex h-52 items-center justify-center overflow-hidden sm:h-56">
+                  <div
+                    aria-hidden="true"
+                    class="absolute h-40 w-40 rounded-full bg-primary-500/15 blur-3xl transition duration-500 group-hover:bg-primary-400/25"
+                  ></div>
+                  <div
+                    class="relative h-44 w-24 rounded-[2rem] border border-white/10 bg-linear-to-b from-surface-700 to-surface-800 p-1.5 shadow-2xl shadow-black/60 transition duration-500 group-hover:-translate-y-2 sm:h-48 sm:w-[6.5rem]"
+                  >
+                    <div
+                      class="relative h-full w-full overflow-hidden rounded-[1.6rem] bg-linear-to-b from-primary-500/20 to-transparent"
+                    >
+                      <span
+                        class="absolute left-1/2 top-2 size-1.5 -translate-x-1/2 rounded-full bg-white/25"
+                      ></span>
+                      <span
+                        class="absolute left-1/2 top-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-400/20 blur-md"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-white/5 p-5 sm:p-6">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary-400">
+                    Fluxo
+                  </p>
+                  <h3 class="mt-1 text-lg font-semibold text-white">Phantom 12 Ultra</h3>
+                  <p class="mt-1 text-sm text-zinc-500">Flagship · 2026</p>
+                  <button
+                    type="button"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 py-2.5 text-sm font-medium text-zinc-300 transition duration-300 hover:border-primary-500/50 hover:bg-primary-500/10 hover:text-primary-400"
+                  >
+                    Comparar
+                    <svg
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="group rounded-3xl border border-white/5 bg-surface-900 transition duration-300 hover:-translate-y-1.5 hover:border-primary-400/30 hover:shadow-2xl hover:shadow-black/40"
+              >
+                <div class="relative flex h-52 items-center justify-center overflow-hidden sm:h-56">
+                  <div
+                    aria-hidden="true"
+                    class="absolute h-40 w-40 rounded-full bg-primary-500/15 blur-3xl transition duration-500 group-hover:bg-primary-400/25"
+                  ></div>
+                  <div
+                    class="relative h-44 w-24 rounded-[2rem] border border-white/10 bg-linear-to-b from-surface-700 to-surface-800 p-1.5 shadow-2xl shadow-black/60 transition duration-500 group-hover:-translate-y-2 sm:h-48 sm:w-[6.5rem]"
+                  >
+                    <div
+                      class="relative h-full w-full overflow-hidden rounded-[1.6rem] bg-linear-to-b from-primary-500/20 to-transparent"
+                    >
+                      <span
+                        class="absolute left-1/2 top-2 size-1.5 -translate-x-1/2 rounded-full bg-white/25"
+                      ></span>
+                      <span
+                        class="absolute left-1/2 top-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-400/20 blur-md"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-white/5 p-5 sm:p-6">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary-400">
+                    Aerolux
+                  </p>
+                  <h3 class="mt-1 text-lg font-semibold text-white">Nimbus Air 9</h3>
+                  <p class="mt-1 text-sm text-zinc-500">Leve · 5G</p>
+                  <button
+                    type="button"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 py-2.5 text-sm font-medium text-zinc-300 transition duration-300 hover:border-primary-500/50 hover:bg-primary-500/10 hover:text-primary-400"
+                  >
+                    Comparar
+                    <svg
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="group rounded-3xl border border-white/5 bg-surface-900 transition duration-300 hover:-translate-y-1.5 hover:border-primary-400/30 hover:shadow-2xl hover:shadow-black/40"
+              >
+                <div class="relative flex h-52 items-center justify-center overflow-hidden sm:h-56">
+                  <div
+                    aria-hidden="true"
+                    class="absolute h-40 w-40 rounded-full bg-primary-500/15 blur-3xl transition duration-500 group-hover:bg-primary-400/25"
+                  ></div>
+                  <div
+                    class="relative h-44 w-24 rounded-[2rem] border border-white/10 bg-linear-to-b from-surface-700 to-surface-800 p-1.5 shadow-2xl shadow-black/60 transition duration-500 group-hover:-translate-y-2 sm:h-48 sm:w-[6.5rem]"
+                  >
+                    <div
+                      class="relative h-full w-full overflow-hidden rounded-[1.6rem] bg-linear-to-b from-primary-500/20 to-transparent"
+                    >
+                      <span
+                        class="absolute left-1/2 top-2 size-1.5 -translate-x-1/2 rounded-full bg-white/25"
+                      ></span>
+                      <span
+                        class="absolute left-1/2 top-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-400/20 blur-md"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-white/5 p-5 sm:p-6">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary-400">
+                    Gama
+                  </p>
+                  <h3 class="mt-1 text-lg font-semibold text-white">Vertex Neo</h3>
+                  <p class="mt-1 text-sm text-zinc-500">Desempenho máximo</p>
+                  <button
+                    type="button"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 py-2.5 text-sm font-medium text-zinc-300 transition duration-300 hover:border-primary-500/50 hover:bg-primary-500/10 hover:text-primary-400"
+                  >
+                    Comparar
+                    <svg
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="group rounded-3xl border border-white/5 bg-surface-900 transition duration-300 hover:-translate-y-1.5 hover:border-primary-400/30 hover:shadow-2xl hover:shadow-black/40"
+              >
+                <div class="relative flex h-52 items-center justify-center overflow-hidden sm:h-56">
+                  <div
+                    aria-hidden="true"
+                    class="absolute h-40 w-40 rounded-full bg-primary-500/15 blur-3xl transition duration-500 group-hover:bg-primary-400/25"
+                  ></div>
+                  <div
+                    class="relative h-44 w-24 rounded-[2rem] border border-white/10 bg-linear-to-b from-surface-700 to-surface-800 p-1.5 shadow-2xl shadow-black/60 transition duration-500 group-hover:-translate-y-2 sm:h-48 sm:w-[6.5rem]"
+                  >
+                    <div
+                      class="relative h-full w-full overflow-hidden rounded-[1.6rem] bg-linear-to-b from-primary-500/20 to-transparent"
+                    >
+                      <span
+                        class="absolute left-1/2 top-2 size-1.5 -translate-x-1/2 rounded-full bg-white/25"
+                      ></span>
+                      <span
+                        class="absolute left-1/2 top-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-400/20 blur-md"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-white/5 p-5 sm:p-6">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary-400">
+                    Lumina
+                  </p>
+                  <h3 class="mt-1 text-lg font-semibold text-white">Aurora Zeta</h3>
+                  <p class="mt-1 text-sm text-zinc-500">Tela impressionante</p>
+                  <button
+                    type="button"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 py-2.5 text-sm font-medium text-zinc-300 transition duration-300 hover:border-primary-500/50 hover:bg-primary-500/10 hover:text-primary-400"
+                  >
+                    Comparar
+                    <svg
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="hardware" class="border-t border-white/5 bg-surface-900/40 py-20 sm:py-28">
+          <div class="mx-auto max-w-7xl px-6">
+            <div class="grid items-center gap-14 lg:grid-cols-[1.05fr_1.35fr] lg:gap-20">
+              <div>
+                <p
+                  class="text-sm font-semibold uppercase tracking-widest text-primary-400"
+                >
+                  Comparação real de hardware
+                </p>
+                <h2
+                  class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                >
+                  Não compare apenas especificações.
+                </h2>
+                <p class="mt-5 text-lg leading-relaxed text-zinc-400">
+                  O marketing mostra o que quer. Aqui, o que importa é o que muda na
+                  prática: processador, gráficos, tela, câmeras e bateria comparados
+                  lado a lado.
+                </p>
+                <ul class="mt-8 space-y-3">
+                  <li class="flex items-center gap-3 text-sm text-zinc-300">
+                    <svg
+                      class="size-4 shrink-0 text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12.5l4 4L19 8.5" />
+                    </svg>
+                    Benchmarks de CPU e GPU lado a lado
+                  </li>
+                  <li class="flex items-center gap-3 text-sm text-zinc-300">
+                    <svg
+                      class="size-4 shrink-0 text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12.5l4 4L19 8.5" />
+                    </svg>
+                    Tela, câmeras e bateria em foco
+                  </li>
+                  <li class="flex items-center gap-3 text-sm text-zinc-300">
+                    <svg
+                      class="size-4 shrink-0 text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12.5l4 4L19 8.5" />
+                    </svg>
+                    Resultados claros, sem enrolação
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div
+                  class="group rounded-2xl border border-white/5 bg-surface-900 p-6 transition duration-300 hover:border-primary-400/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-primary-500/15 text-primary-400 ring-1 ring-primary-500/20 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="5" y="5" width="14" height="14" rx="2" />
+                      <rect x="9.5" y="9.5" width="5" height="5" rx="0.5" />
+                      <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">CPU</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Processadores comparados lado a lado.
+                  </p>
+                </div>
+
+                <div
+                  class="group rounded-2xl border border-white/5 bg-surface-900 p-6 transition duration-300 hover:border-primary-400/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-primary-500/15 text-primary-400 ring-1 ring-primary-500/20 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="5" y="5" width="14" height="14" rx="2" />
+                      <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" />
+                      <path d="M13.5 8.5l-2.9 3.4h2.1l-1.3 3.7 3-3.4h-2.1l1.2-3.7z" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">GPU</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Gráficos e desempenho em jogos.
+                  </p>
+                </div>
+
+                <div
+                  class="group rounded-2xl border border-white/5 bg-surface-900 p-6 transition duration-300 hover:border-primary-400/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-primary-500/15 text-primary-400 ring-1 ring-primary-500/20 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="2" y="4" width="20" height="13" rx="2" />
+                      <path d="M8 21h8M12 17v4" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">Tela</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Resolução, taxa de atualização e brilho.
+                  </p>
+                </div>
+
+                <div
+                  class="group rounded-2xl border border-white/5 bg-surface-900 p-6 transition duration-300 hover:border-primary-400/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-primary-500/15 text-primary-400 ring-1 ring-primary-500/20 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M14.5 5h-5L7.6 7.2A2 2 0 0 1 6.2 8H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2.2a2 2 0 0 1-1.4-.6L14.5 5z"
+                      />
+                      <circle cx="12" cy="13" r="3" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">Câmeras</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Sensores, lentes e recursos.
+                  </p>
+                </div>
+
+                <div
+                  class="group rounded-2xl border border-white/5 bg-surface-900 p-6 transition duration-300 hover:border-primary-400/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-primary-500/15 text-primary-400 ring-1 ring-primary-500/20 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="3" y="8" width="16" height="9" rx="2" />
+                      <path d="M21.5 11v3" />
+                      <path d="M7 12v2M10.5 12v2M14 12v2" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">Bateria</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Capacidade, autonomia e carregamento.
+                  </p>
+                </div>
+
+                <div
+                  class="group rounded-2xl border border-dashed border-white/10 bg-surface-900/50 p-6 transition duration-300 hover:border-primary-500/40 hover:bg-surface-800/60"
+                >
+                  <div
+                    class="grid size-11 place-items-center rounded-xl bg-white/5 text-zinc-400 ring-1 ring-white/10 transition duration-300 group-hover:bg-primary-500 group-hover:text-black"
+                  >
+                    <svg
+                      class="size-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-5 font-semibold text-white">E muito mais</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-zinc-500">
+                    Memória, armazenamento e conectividade também entram na comparação.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="comecar" class="py-20 sm:py-28">
+          <div class="mx-auto max-w-7xl px-6">
+            <div
+              class="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-surface-900 px-6 py-16 text-center sm:px-16 sm:py-20"
+            >
+              <div
+                aria-hidden="true"
+                class="pointer-events-none absolute -top-24 left-1/2 h-64 w-[36rem] -translate-x-1/2 rounded-full bg-primary-500/10 blur-[100px]"
+              ></div>
+              <div class="relative">
+                <h2
+                  class="mx-auto max-w-2xl text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                >
+                  Descubra qual celular realmente combina com você.
+                </h2>
+                <p class="mx-auto mt-5 max-w-xl text-lg text-zinc-400">
+                  Escolha dois modelos, compare o que importa e decida com confiança.
+                </p>
+                <button
+                  type="button"
+                  class="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 px-10 py-4 text-base font-semibold text-black shadow-lg shadow-primary-950/40 transition duration-300 hover:bg-primary-400 active:scale-[0.98]"
+                >
+                  Começar comparação
+                  <svg
+                    class="size-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-white/5">
+        <div class="mx-auto max-w-7xl px-6 py-14">
+          <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+            <a href="#inicio" class="flex items-center gap-3">
+              <span
+                class="grid size-9 place-items-center rounded-xl bg-primary-500 text-black shadow-lg shadow-primary-950/40"
+              >
+                <svg
+                  class="size-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="7" y="2" width="10" height="20" rx="2.5" />
+                  <path d="M12 17.5h.01" />
+                </svg>
+              </span>
+              <span class="text-lg font-bold tracking-tight text-white"
+                >Compara<span class="text-primary-400">Phone</span></span
+              >
+            </a>
+            <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-zinc-400">
+              <a href="#destaques" class="transition duration-300 hover:text-white">Celulares</a>
+              <a href="#inicio" class="transition duration-300 hover:text-white">Comparar</a>
+              <a href="#" class="transition duration-300 hover:text-white">Rankings</a>
+            </nav>
+          </div>
+          <p class="mt-10 max-w-sm text-sm text-zinc-600">
+            Comparação técnica de smartphones, com foco em hardware e desempenho.
+          </p>
+          <div
+            class="mt-8 flex flex-col gap-2 border-t border-white/5 pt-6 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <p>© 2026 ComparaPhone. Todos os direitos reservados.</p>
+            <p>Feito para quem pesquisa antes de comprar.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
