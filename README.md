@@ -1,4 +1,4 @@
-readme_content = """# ComparaPhone
+readme_content = ComparaPhone
 
 > **⚠️ Projeto em Andamento / Não Finalizado**
 
